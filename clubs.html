@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kulüplerimiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-mortarboard-fill text-warning"></i> KampüsNet</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="clubs.html">Kulüpler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Kulüpler Alanı -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4 fw-bold">Aktif Öğrenci Kulüpleri</h2>
+        
+        <div class="row">
+            <!-- 1. Kulüp Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary"><i class="bi bi-code-slash"></i> Yazılım Kulübü</h5>
+                        <p class="card-text text-muted">Kodlama projeleri, hackathonlar ve teknoloji sohbetleri düzenliyoruz.</p>
+                        <button type="button" class="btn btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#yazilimModal">
+                            Detayları Gör
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Kulüp Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success"><i class="bi bi-graph-up-arrow"></i> Dijital Pazarlama</h5>
+                        <p class="card-text text-muted">Sosyal medya yönetimi, e-ticaret stratejileri ve reklam trendleri.</p>
+                        <button type="button" class="btn btn-outline-success mt-auto" data-bs-toggle="modal" data-bs-target="#pazarlamaModal">
+                            Detayları Gör
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Kulüp Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-danger"><i class="bi bi-robot"></i> Robotik Kulübü</h5>
+                        <p class="card-text text-muted">Gömülü sistemler, afet radarlı sistemler ve robotik projeler geliştiriyoruz.</p>
+                        <button type="button" class="btn btn-outline-danger mt-auto" data-bs-toggle="modal" data-bs-target="#robotikModal">
+                            Detayları Gör
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modallar (Pop-up Pencereler) -->
+    <div class="modal fade" id="yazilimModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Yazılım ve Teknoloji Kulübü</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Kulüp Başkanı:</strong> Ahmet Yılmaz</p>
+                    <p><strong>E-posta:</strong> yazilim@kampus.edu.tr</p>
+                    <p class="text-muted">Üye olmak için aşağıdaki form sayfasına gidebilirsin.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <a href="contact.html" class="btn btn-primary">Üyelik Formuna Git</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="pazarlamaModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Dijital Pazarlama Kulübü</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Kulüp Başkanı:</strong> Zeynep Demir</p>
+                    <p><strong>E-posta:</strong> pazarlama@kampus.edu.tr</p>
+                    <p class="text-muted">Üye olmak için aşağıdaki form sayfasına gidebilirsin.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <a href="contact.html" class="btn btn-primary">Üyelik Formuna Git</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="robotikModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Robotik ve İnovasyon Kulübü</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Kulüp Başkanı:</strong> Mert Kaya</p>
+                    <p><strong>E-posta:</strong> robotik@kampus.edu.tr</p>
+                    <p class="text-muted">Üye olmak için aşağıdaki form sayfasına gidebilirsin.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <a href="contact.html" class="btn btn-primary">Üyelik Formuna Git</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-4 bg-dark text-white text-center mt-5">
+        <div class="container"><p class="mb-0">&copy; 2026 KampüsNet</p></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
